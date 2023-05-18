@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.brandDiv {
+  height: 150px;
+}
+.logoImage {
+  width: 100vw;
+  height: 100%;
+}
+
+.displayDiv {
+  background-color: #101010;
+}
+
+.navDiv ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.navDiv ul li {
+  margin-right: 0.9em;
+}
