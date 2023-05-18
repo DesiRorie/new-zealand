@@ -4,7 +4,6 @@ import "./App.css";
 import BrandImage from "./components/BrandImage";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
-import Test from "./components/test";
 
 function App() {
   return (
