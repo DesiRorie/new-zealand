@@ -10,8 +10,9 @@ a {
   cursor: pointer;
 }
 a:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: 0.5s;
+  color: rgb(202, 133, 4);
 }
 .brandDiv {
   height: 150px;
@@ -21,10 +22,22 @@ a:hover {
   height: 100%;
 }
 
-.displayDiv {
-  background-color: #101010;
+.displayDiv img {
+  width: 100%;
+  border-radius: 5px;
 }
 
+.navDiv {
+  display: flex;
+  background-color: #101010;
+  flex-direction: column;
+}
+.navDiv img {
+  width: 75%;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
 .navDiv ul {
   display: flex;
   list-style: none;
@@ -34,4 +47,13 @@ a:hover {
 }
 .navDiv ul li {
   margin-right: 0.9em;
+}
+
+@media (max-width: 320px) {
+  .navDiv img {
+    width: 100%;
+  }
+  .navDiv {
+    font-size: small;
+  }
 }

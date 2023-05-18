@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+
 const MenuNav = () => {
   return (
     <div className="navDiv">
       <ul>
-        <Link>
+        <Link to="about">
           <li>About New Zealand</li>
         </Link>
-        <Link>
+        <Link to="spotlight">
           <li>In the spotlight</li>
         </Link>
         <Link>
