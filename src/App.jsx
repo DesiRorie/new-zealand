@@ -10,13 +10,14 @@ import MenuNav from "./components/MenuNav";
 function App() {
   return (
     <>
-      <BrandImage />
-      <MenuNav />
-      <Routes>
-        <Route path="/*" element={<Home />}>
+      <div className="App">
+        <BrandImage />
+        <MenuNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </div>
     </>
   );
 }
