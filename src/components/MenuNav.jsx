@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const MenuNav = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div className="navDiv">
       <ul>
@@ -14,7 +24,11 @@ const MenuNav = () => {
         <Link to="spotlight">
           <li>Spotlight</li>
         </Link>
-        <Link>
+        <Link
+          className="menuLink"
+          onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleMouseEnter}
+        >
           <li>Menu</li>
         </Link>
         <Link>
@@ -24,6 +38,7 @@ const MenuNav = () => {
           <li>Map</li>
         </Link>
       </ul>
+      {isHovered && <div className="hoverDiv">Hovered Menu Link</div>}
     </div>
   );
 };
