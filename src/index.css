@@ -88,6 +88,11 @@ a:hover {
     width: 100%;
     border-radius: 5px;
   }
+  .spotlightDiv {
+    text-align: center;
+
+    background-color: #101010;
+  }
 }
 @media (min-width: 768px) {
   .navDiv img {
