@@ -70,10 +70,18 @@ a:hover {
 .navDiv ul li {
   margin-right: 0.9em;
 }
+.spotlightDiv {
+  display: flex;
+  padding: 1em;
+  text-align: start;
+  flex-direction: column;
+
+  background-color: #101010;
+}
 
 @media (max-width: 320px) {
   .navDiv {
-    font-size: small;
+    font-size: 14px;
   }
 
   .displayDiv img {

@@ -5,11 +5,14 @@ const MenuNav = () => {
   return (
     <div className="navDiv">
       <ul>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <Link to="about">
-          <li>About New Zealand</li>
+          <li>About </li>
         </Link>
         <Link to="spotlight">
-          <li>In the spotlight</li>
+          <li>Spotlight</li>
         </Link>
         <Link>
           <li>Menu</li>
@@ -17,7 +20,6 @@ const MenuNav = () => {
         <Link>
           <li>Wine</li>
         </Link>
-
         <Link>
           <li>Map</li>
         </Link>
