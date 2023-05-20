@@ -83,8 +83,58 @@ a:hover {
   transition: 0.5s;
   margin: auto;
   margin-top: 1em;
+  width: 100%;
+}
+.hoverDiv li {
+  cursor: pointer;
+}
+.hoverDiv li:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+}
+.menuDiv {
+  display: flex;
+  background-color: #101010;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+.menuDiv ul li {
+  cursor: pointer;
+  list-style: none;
+  margin: 10px;
+}
+.menuDiv ul li:hover {
+  text-decoration: underline;
+}
+.menuItem {
+  width: 90%;
+  margin: auto;
+  background-color: #101010;
+  border-top: 2px solid black;
+}
+.sideMenu {
+  display: flex;
+  border-bottom: 2px solid black;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.sideMenu span {
+  margin: 10px;
+}
+.menuItemsDiv {
+  display: flex;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+
+  /* flex-direction: column; */
+}
 @media (max-width: 320px) {
   .navDiv {
     font-size: 14px;
@@ -98,6 +148,9 @@ a:hover {
     text-align: center;
 
     background-color: #101010;
+  }
+  .hoverDiv {
+    display: none;
   }
 }
 @media (min-width: 768px) {

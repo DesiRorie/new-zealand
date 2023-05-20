@@ -24,11 +24,7 @@ const MenuNav = () => {
         <Link to="spotlight">
           <li>Spotlight</li>
         </Link>
-        <Link
-          className="menuLink"
-          onMouseLeave={handleMouseLeave}
-          onMouseEnter={handleMouseEnter}
-        >
+        <Link to="menu" className="menuLink" onMouseEnter={handleMouseEnter}>
           <li>Menu</li>
         </Link>
         <Link>
@@ -38,7 +34,22 @@ const MenuNav = () => {
           <li>Map</li>
         </Link>
       </ul>
-      {isHovered && <div className="hoverDiv">Hovered Menu Link</div>}
+      {isHovered && (
+        <div
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="hoverDiv"
+        >
+          <ul style={{ padding: "2em" }}>
+            <li>Appetizers</li>
+            <li>Sushi</li>
+            <li>Specialty Rolls & Bento Boxes</li>
+            <li>Grill</li>
+            <li>Dessert</li>
+            <li>Kid & Sides</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
