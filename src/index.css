@@ -157,7 +157,7 @@ a:hover {
   /* border-radius: 5px; */
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .navDiv {
     font-size: 14px;
   }
