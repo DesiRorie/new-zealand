@@ -113,6 +113,7 @@ a:hover {
   margin: auto;
   background-color: #101010;
   border-top: 2px solid black;
+  border-radius: 10px;
 }
 .sideMenu {
   display: flex;
@@ -135,11 +136,35 @@ a:hover {
 
   /* flex-direction: column; */
 }
+.appetizersDiv {
+  text-align: center;
+  /* justify-content: center; */
+  /* display: flex; */
+  background-color: #101010;
+  padding: 1em;
+}
+.columnDiv {
+  display: flex;
+}
+
+.halfWidthDiv {
+  flex-basis: 50%;
+}
+.foodItem {
+  border: 1px solid #3c3c3c;
+  min-height: 120px;
+
+  /* border-radius: 5px; */
+}
+
 @media (max-width: 320px) {
   .navDiv {
     font-size: 14px;
   }
-
+  .columnDiv {
+    display: flex;
+    flex-direction: column;
+  }
   .displayDiv img {
     width: 100%;
     border-radius: 5px;
